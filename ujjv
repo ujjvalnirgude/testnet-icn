@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -Command "try { Invoke-WebRequest -Uri 'https://console.icn.global/downloads/install/start.ps1' -OutFile '.\start.ps1' -UseBasicParsing; & '.\start.ps1' -PrivateKey '<32a9b0116fb286d03273fdde1c49ffb422cb2dc1afcb3933534ac6a9dab9f76c>'} finally { Remove-Item .\start.ps1 -ErrorAction SilentlyContinue }" 
